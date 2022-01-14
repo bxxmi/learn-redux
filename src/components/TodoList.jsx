@@ -2,7 +2,7 @@ export default function TodoList({ todos }) {
   return (
     <ul>
       {todos.map((todo) => {
-        return <li>{todo.text}</li>;
+        return <li key={todo.text}>{todo.text}</li>;
       })}
     </ul>
   );
