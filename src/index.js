@@ -6,7 +6,6 @@ import { Provider } from "react-redux";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* Provider: 아래 컴포넌트에 store 주입 */}
     <Provider store={store}>
       <App />
     </Provider>
