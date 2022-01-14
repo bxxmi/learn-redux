@@ -11,6 +11,16 @@ export const decrease = () => ({
   type: DECREASE,
 });
 
+// thunk 함수 생성
+// 이때, getState를 쓰지 않는다면 굳이 파라미터로 받을 필요가 없다.
+export const increaseAsync = () => (dispatch) => {
+  setTimeout(() => dispatch(increase()), 1000);
+};
+
+export const decreaseAsync = () => (dispatch) => {
+  setTimeout(() => dispatch(decrease()), 1000);
+};
+
 // 초기값
 const initialState = 0;
 
